@@ -56,7 +56,9 @@ springmvc redis mybatis springboot 集成demo.
 
 ## 注意事项
 MODEL或者entity实体类需要实现序列化接口。
+```
 public class User implements Serializable{
+        
         // 这句话不能少的。否则运行期间会报错。
 	private static final long serialVersionUID = -9078118632986764352L;
 
@@ -77,6 +79,7 @@ public class User implements Serializable{
 	}
 	
 }
+```
 
 ## 测试
 ```
